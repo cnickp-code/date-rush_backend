@@ -34,7 +34,7 @@ usersRouter
             user_name
         )
         .then(userBool => {
-            if(!userBool) {
+            if(userBool) {
                 return res.status(400).json({
                     error: `Username already taken`
                 });
