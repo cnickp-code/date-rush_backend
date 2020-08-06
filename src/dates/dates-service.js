@@ -37,7 +37,7 @@ const DatesService = {
     serializeDateItem(item) {
         return {
             id: item.id,
-            name: item.name,
+            name: xss(item.name),
             user_id: item.user_id,
             place_id: item.place_id,
             meal_id: item.meal_id,

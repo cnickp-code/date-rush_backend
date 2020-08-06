@@ -160,7 +160,7 @@ function makeMaliciousDate() {
     const maliciousDate = {
         id: 911,
         name: 'Bad Date <script>alert("xss");</script>',
-        user_id: 4,
+        user_id: 1,
         place_id: 'ChIJ7U-BHeuzwoARAvYAqFtEc2A',
         meal_id: '52906',
         meal_type: "In",
@@ -170,10 +170,10 @@ function makeMaliciousDate() {
     }
     const cleanedDate = {
         ...maliciousDate,
-        name: 'Bad Event &lt;script&gt;alert(\"xss\");&lt;/script&gt;',
+        name: 'Bad Date &lt;script&gt;alert(\"xss\");&lt;/script&gt;',
     }
     return {
-        maliciousEvent,
+        maliciousDate,
         cleanedDate
     }
 }

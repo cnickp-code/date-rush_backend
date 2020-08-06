@@ -5,7 +5,7 @@ const supertest = require('supertest');
 const jwt = require('jsonwebtoken');
 const { makeDatesArray, makeUsersArray } = require('./test-helpers');
 
-describe.only('Auth Endpoints', function () {
+describe('Auth Endpoints', function () {
     let db;
 
     const testUsers = makeUsersArray();
