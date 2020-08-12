@@ -160,6 +160,7 @@ describe.only('Dates Endpoints', () => {
             const newDate = {
                 name: 'New Test Date!',
                 user_id: 1,
+                location: 'Los Angeles',
                 place_id: 'ChIJ7U-BHeuzwoARAvYAqFtEc2A',
                 meal_id: '52906',
                 meal_type: "In",
@@ -176,6 +177,7 @@ describe.only('Dates Endpoints', () => {
                 .expect(res => {
                     expect(res.body).to.be.an('object')
                     expect(res.body.user_id).to.be.eql(newDate.user_id)
+                    expect(res.body.location).to.be.eql(newDate.location)
                     expect(res.body.place_id).to.be.eql(newDate.place_id)
                     expect(res.body.meal_id).to.be.eql(newDate.meal_id)
                     expect(res.body.meal_type).to.be.eql(newDate.meal_type)

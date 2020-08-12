@@ -46,6 +46,7 @@ function makeDatesArray() {
         {
             id: 1,
             name: 'best date 1',
+            location: 'Los Angeles',
             user_id: 1,
             place_id: 'ChIJ7U-BHeuzwoARAvYAqFtEc2A',
             meal_id: '52906',
@@ -57,6 +58,7 @@ function makeDatesArray() {
         {
             id: 2,
             name: 'best date 2',
+            location: 'Chicago',
             user_id: 1,
             place_id: 'ChIJ621AHF_QwoARxgHofQrJkEk',
             meal_id: '53021',
@@ -68,6 +70,7 @@ function makeDatesArray() {
         {
             id: 3,
             name: 'best date 1',
+            location: 'Wisconsin',
             user_id: 2,
             place_id: 'ChIJ621AHF_QwoARxgHofQrJkEk',
             meal_id: '53021',
@@ -79,6 +82,7 @@ function makeDatesArray() {
         {
             id: 4,
             name: 'best date 2',
+            location: 'San Francisco',
             user_id: 2,
             place_id: 'ChIJ7U-BHeuzwoARAvYAqFtEc2A',
             meal_id: '52906',
@@ -90,6 +94,7 @@ function makeDatesArray() {
         {
             id: 5,
             name: 'best date',
+            location: 'Portland',
             user_id: 3,
             place_id: 'ChIJ621AHF_QwoARxgHofQrJkEk',
             meal_id: '53021',
@@ -101,6 +106,7 @@ function makeDatesArray() {
         {
             id: 6,
             name: 'best date',
+            location: 'Miami',
             user_id: 4,
             place_id: 'ChIJ7U-BHeuzwoARAvYAqFtEc2A',
             meal_id: '52906',
@@ -160,6 +166,7 @@ function makeMaliciousDate() {
     const maliciousDate = {
         id: 911,
         name: 'Bad Date <script>alert("xss");</script>',
+        location: 'Los Angeles',
         user_id: 1,
         place_id: 'ChIJ7U-BHeuzwoARAvYAqFtEc2A',
         meal_id: '52906',

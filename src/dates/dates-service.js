@@ -38,6 +38,7 @@ const DatesService = {
         return {
             id: item.id,
             name: xss(item.name),
+            location: xss(item.location),
             user_id: item.user_id,
             place_id: item.place_id,
             meal_id: item.meal_id,
