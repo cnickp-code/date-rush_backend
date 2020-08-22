@@ -25,8 +25,8 @@ datesRouter
     .post(bodyParser, (req, res, next) => {
         const knexInstance = req.app.get('db');
         const user_id = req.user.id;
-        const { name, location, place_id, meal_id, meal_type, drink_id, show_id, show_type } = req.body;
-        const newDateItem = { name, location, place_id, meal_id, meal_type, drink_id, show_id, show_type, user_id };
+        const { name, location, place_id, meal_id, meal_type, drink_id, drink_type, show_id, show_type } = req.body;
+        const newDateItem = { name, location, place_id, meal_id, meal_type, drink_id, drink_type, show_id, show_type, user_id };
 
         for(const [key, value] of Object.entries(newDateItem)) {
             if(value == null) {
