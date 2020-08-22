@@ -44,6 +44,7 @@ const DatesService = {
             meal_id: item.meal_id,
             meal_type: item.meal_type,
             drink_id: item.drink_id,
+            drink_type: item.drink_type,
             show_id: item.show_id,
             show_type: item.show_type
         }

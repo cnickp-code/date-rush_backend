@@ -6,6 +6,7 @@ CREATE TABLE dr_dates(
     meal_id TEXT NOT NULL,
     meal_type TEXT NOT NULL,
     drink_id TEXT NOT NULL,
+    drink_type TEXT NOT NULL,
     show_id TEXT NOT NULL,
     show_type TEXT NOT NULL,
     user_id INTEGER REFERENCES dr_users(id) ON DELETE SET NULL
